@@ -120,7 +120,7 @@ function App() {
             "Authorization": auth
           };
           const apiResponse = await fetch(
-            "https://te1ifmd6f9.execute-api.us-west-2.amazonaws.com/v4/read",
+            "https://tl27i7d7z5.execute-api.us-west-2.amazonaws.com/v0/read",
             { headers }
           );
           const apiResponseJSON = await apiResponse.json();
@@ -152,7 +152,7 @@ function App() {
           "Authorization": auth
         };
         const apiResponse = await fetch(
-          "https://te1ifmd6f9.execute-api.us-west-2.amazonaws.com/v4/read",
+          "https://tl27i7d7z5.execute-api.us-west-2.amazonaws.com/v0/read",
           { headers }
         );
         const apiResponseJSON = await apiResponse.json();
@@ -207,7 +207,7 @@ function App() {
         };
         // Make the API Call
         const apiResponse = await fetch(
-          "https://te1ifmd6f9.execute-api.us-west-2.amazonaws.com/v3/create",
+          "https://tl27i7d7z5.execute-api.us-west-2.amazonaws.com/v0/create",
           requestOptions
         ).then((response) => response.text())
         .catch((error) => console.log("error", error));
@@ -261,7 +261,7 @@ function App() {
         };
         // make API call with parameters and use promises to get response
         await fetch(
-          "https://te1ifmd6f9.execute-api.us-west-2.amazonaws.com/v5/delete",
+          "https://tl27i7d7z5.execute-api.us-west-2.amazonaws.com/v0/delete",
           requestOptions
         ).then((response) => response.text())
         .catch((error) => console.log("error", error));
@@ -374,7 +374,7 @@ function App() {
       async function editGobj(request, clearVar) {
         // make API call with parameters and use promises to get response
         await fetch(
-        "https://te1ifmd6f9.execute-api.us-west-2.amazonaws.com/v6/edit",
+        "https://tl27i7d7z5.execute-api.us-west-2.amazonaws.com/v0/edit",
         request
         ).then((response) => response.text())
         .catch((error) => console.log("error", error));
